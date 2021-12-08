@@ -1,0 +1,26 @@
+server:
+  port: 80
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka #,http://eureka7002.com:7002/eureka
+
+
+spring:
+  application:
+    name: spring-cloud-order-fegin
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+ribbon:
+  ReadTimeout: 6000
+  ConnectTimeout: 6000
+feign:
+  hystrix:
+    enabled: true
