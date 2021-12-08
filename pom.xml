@@ -23,8 +23,6 @@
     <module>cloud-consumer-hystrix-order80</module>
     <module>cloud-consumer-hystrix-dashboard9001</module>
     <module>cloud-gateway-gateway9527</module>
-    <module>cloud-gateway-gatewaytest</module>
-    <module>cloud-gateway-gatewaytest</module>
   </modules>
   <packaging>pom</packaging>
 
